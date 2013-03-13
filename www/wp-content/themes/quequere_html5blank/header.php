@@ -22,6 +22,14 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php
+if ($post->post_name == 'home'):
+?>
+<div id="temporary-background"></div>
+<div id="background"></div>
+<?php
+endif;
+?>
 	<!-- Header -->
 	<header>
 
