@@ -38,6 +38,7 @@ header{
   height:143px;
 }
 header nav{
+  margin-left: 240px; /*largura do logo mais 10px*/
   margin-right: 6%;
   text-align: right;
   padding-top: 33px;
