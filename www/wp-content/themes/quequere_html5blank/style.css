@@ -18,8 +18,8 @@ License URI: http://opensource.org/licenses/mit-license.php
 
 /*
 body.home{
-  background-image: url(img/dev_home.png);
-  background-position: -56px -256px;
+  background-image: url(img/dev_home_2.png);
+  background-position: center -16px;
 }
 */
 
@@ -35,12 +35,12 @@ body.home{
    ========================================================================== */
 
 header{
-  height:212px;
+  height:143px;
 }
 header nav{
-  margin-left: 342px;
+  margin-right: 6%;
   text-align: right;
-  padding-top: 86px;
+  padding-top: 33px;
 }
 header nav ul{
   margin: 0;
@@ -49,10 +49,10 @@ header nav ul{
 header nav ul li{
   display: inline;
   font-family: 'Ubuntu Condensed', "Futura", sans-serif;
-  font-size: 2.3rem;
-  line-height: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 1.9rem;
   color: #7287c3;
-  margin-right: 0.2rem;
+  margin-right: 0.8rem;
 }
 header nav ul li:last-child{
   color:transparent;
@@ -60,7 +60,7 @@ header nav ul li:last-child{
 header nav ul li a{
   text-decoration: none;
   color: #1e1e1c;
-  margin-right: 0.2rem;
+  margin-right: 0.8rem;
 }
 #logo{
   position: absolute;
@@ -76,13 +76,13 @@ body.home{
 body.home #temporary-background{
   background-color: #DF9931;
   position: absolute;
-  top: 371px;
+  top: 404px;
   width: 100%;
   height: 80%;
 }
 body.home #background{
   background-image: url(img/dev_home_bg.png);
-  background-position: center -256px;
+  background-position: center -17px;
   /*background-color: red;*/
   position: absolute;
   width: 100%;
@@ -91,14 +91,14 @@ body.home #background{
 body.home #mascote{
   position: relative;
   left: 50%;
-  margin-left:-80px;
+  top:150px;
 }
 body.home #balao{
   position: absolute;
-  left: 246px;
-  top:-66px;
-  height:32%;
-  width: 32%;
+  left: 166px;
+  top:-146px;
+  height:57%;
+  width: 35.4%;
   background-color: rgba(255,255,255,0.7);
   border-radius: 30px;
   padding: 1% 2%;
