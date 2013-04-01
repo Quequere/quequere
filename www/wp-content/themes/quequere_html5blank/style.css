@@ -98,8 +98,9 @@ body.home #balao{
   position: absolute;
   left: 166px;
   top:-146px;
-  height:57%;
+  min-height:57%;
   width: 35.4%;
+  background-color: #fff;
   background-color: rgba(255,255,255,0.7);
   border-radius: 30px;
   padding: 1% 2%;
@@ -144,12 +145,12 @@ body.home #balao{
 
 /* Global Box Sizing and Font-Smoothing */
 *, *:after, *:before {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
 	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
 	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
@@ -186,6 +187,12 @@ body {
 
 }
 
+/* 530px and greater */
+@media only screen and (min-width: 530px) {
+  body.home #balao{
+    left: -224px;
+  }
+}
 /* 768px and greater */
 @media only screen and (min-width: 768px) {
 
