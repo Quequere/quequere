@@ -22,6 +22,33 @@ body.home{
   background-position: center -167px;
 }
 */
+body{
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+body.contatos{
+  background-image: url(img/contato_aspecto_final.jpg);
+  background-position: center -130px;
+}
+body.transparencia{
+  background-image: url(img/transparencia.png);
+}
+body.sobre{
+  background-image: url(img/sobre_final.jpg);
+}
+body.servicos{
+  background-image: url(img/servicos_RESIZE.png);
+}
+body.jogos{
+  background-image: url(img/jogos_final.jpg);
+}
+body.noticias{
+  background-image: url(img/noticias.png);
+}
+
+
+
+
 
 /* =============================================================================
    Fonts
@@ -136,7 +163,7 @@ body.home{
   background-color: #bddcec;
 }
 body.home #temporary-background{
-  background-color: #DF9931;
+  background-color: #E29528;
   position: absolute;
   top: 413px;
   width: 100%;
@@ -178,6 +205,10 @@ body.home #balao_rabo{
   left:-118px;
   background-image: url(img/home_rabinho.png);
   background-repeat: no-repeat;
+}
+
+body.contatos{
+
 }
 /* =============================================================================
    Structure
