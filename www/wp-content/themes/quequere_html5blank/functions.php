@@ -190,6 +190,7 @@ function add_slug_to_body_class($classes)
         if ($key > -1) {
             unset($classes[$key]);
         }
+        $classes[] = 'noticias';
     } elseif (is_page()) {
         $classes[] = sanitize_html_class($post->post_name);
     } elseif (is_singular()) {
