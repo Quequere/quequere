@@ -29,7 +29,8 @@ body{
 body.contatos{
 /*  background-image: url(img/contato_aspecto_final.jpg);
   background-position: center -130px;
-*/}
+*/
+}
 body.transparencia{
   background-image: url(img/transparencia.png);
 }
@@ -44,6 +45,7 @@ body.jogos{
 }
 body.noticias{
   background-image: url(img/noticias.png);
+  background-position: right -130px;
 }
 
 
@@ -124,6 +126,9 @@ body {
 
 header{
   height:143px;
+}
+header .wrapper{
+  z-index:2;
 }
 header nav{
   margin-left: 240px; /*largura do logo mais 10px*/
