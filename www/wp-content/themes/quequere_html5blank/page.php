@@ -31,3 +31,4 @@
 
 	</section>
 	<!-- /Section -->
+<?php get_footer(); ?>

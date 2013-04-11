@@ -27,9 +27,9 @@ body{
   background-position: center top;
 }
 body.contatos{
-  background-image: url(img/contato_aspecto_final.jpg);
+/*  background-image: url(img/contato_aspecto_final.jpg);
   background-position: center -130px;
-}
+*/}
 body.transparencia{
   background-image: url(img/transparencia.png);
 }
@@ -162,22 +162,46 @@ header nav ul li a{
 body.home{
   background-color: #bddcec;
 }
-body.home #temporary-background{
-  background-color: #E29528;
-  position: absolute;
-  top: 413px;
-  width: 100%;
-  height: 80%;
+body.contatos{
+  background-color: #1C3A94;
 }
-body.home #background{
-  /*background-image: url(img/dev_home_bg.png);*/
-  background-image: url(img/home_fundo.png);
-  background-position: center -167px;
+body.home #background,
+body.contatos #background{
   background-repeat: repeat-x;
   position: absolute;
   width: 100%;
   height: 944px;
   opacity: 0.5;
+}
+body.home #background{
+  background-image: url(img/home_fundo.png);
+  background-position: center -167px;
+}
+body.contatos #background{
+  background-image: url(img/contato_fundo.png);
+  background-position: center -130px;
+  /*opacity: 0.5;*/
+}
+body.home #temporary-background,
+body.contatos #temporary-background,
+body.contatos #temporary-background-2{
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}
+body.home #temporary-background{
+  background-color: #E29528;
+  top: 413px;
+}
+body.contatos #temporary-background{
+  background-color: #2C2110;
+  /*opacity:0.5;*/
+  top: 471px;
+}
+body.contatos #temporary-background-2{
+  background-color: #2F2F2F;
+  /*opacity:0.5;*/
+  top: 671px;
 }
 body.home #mascote{
   position: relative;
@@ -186,17 +210,38 @@ body.home #mascote{
   margin-left:-84px;
   top:105px;
 }
-body.home #balao{
+body.contatos #mascote{
+  /*672x876*/
+  background-image: url(img/contato_personagem.png);
+  position: relative;
+  left: 100%;
+  width:672px;
+  height:876px;
+  margin-left:-634px;
+  top:-63px;
+}
+body.home #balao,
+body.contatos #balao{
   position: absolute;
-  left: 231px;
-  top:-56px;
-  min-height:35.3%;
-  width: 57%;
   background-color: #fff;
-  background-color: rgba(255,255,255,0.7);
   border-radius: 40px;
   padding: 1% 2%;
 }
+body.home #balao{
+  background-color: rgba(255,255,255,0.7);
+  left: 231px;
+  top:-56px;
+  min-height:45.3%;
+  width: 57%;
+}
+body.contatos #balao{
+  background-color: rgba(255,255,255,0.9);
+  top:42px;
+  min-height:45%;
+  left: 23px;
+  width: 48%;
+}
+
 body.home #balao_rabo{
   position: absolute;
   width:167px;
@@ -207,9 +252,6 @@ body.home #balao_rabo{
   background-repeat: no-repeat;
 }
 
-body.contatos{
-
-}
 /* =============================================================================
    Structure
    ========================================================================== */
@@ -254,6 +296,11 @@ body.contatos{
     left: 100%;
     margin-left: -49px;
   }
+  body.contatos #balao{
+    left: 23px;
+    width: 62%;
+  }
+
 }
 
 /* 321px and greater */
@@ -276,6 +323,10 @@ body.contatos{
     left:-118px;
     margin-left: 0;
   }
+  body.contatos #balao{
+    width: 49%;
+  }
+
 }
 
 /* 768px and greater */

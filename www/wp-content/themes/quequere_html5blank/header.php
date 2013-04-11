@@ -23,9 +23,10 @@
 <body <?php body_class(); ?>>
 
 <?php
-if ($post->post_name == 'home'):
+if (in_array($post->post_name, array('home', 'contatos'))):
 ?>
 <div id="temporary-background"></div>
+<div id="temporary-background-2"></div>
 <div id="background"></div>
 <?php
 endif;
