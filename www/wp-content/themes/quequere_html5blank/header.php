@@ -23,7 +23,10 @@
 <body <?php body_class(); ?>>
 
 <?php
-if (in_array($post->post_name, array('home', 'contatos'))):
+if (in_array($post->post_name, array('contatos', 'jogos'))){
+	$logo_branco = "_branco";
+}
+if (in_array($post->post_name, array('home', 'contatos', 'sobre', 'transparencia'))):
 ?>
 <div id="temporary-background"></div>
 <div id="temporary-background-2"></div>
@@ -42,7 +45,7 @@ endif;
 				<a href="<?php echo home_url(); ?>">
 					<!-- SVG Logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 					<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo"> -->
-					<img src="<?php echo get_template_directory_uri(); ?>/img/dev_logo.png" alt="Logo">
+					<img src="<?php echo get_template_directory_uri() . "/img/dev_logo$logo_branco.png"; ?>" alt="Logo">
 				</a>
 			</div>
 			<!-- /Logo -->
