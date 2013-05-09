@@ -42,7 +42,7 @@ body.servicos{
   background-image: url(img/servicos_RESIZE.png);
 }
 body.jogos{
-  background-image: url(img/jogos_final.jpg);
+  /*background-image: url(img/jogos_final.jpg);*/
 }
 body.noticias{
   background-image: url(img/noticias.png);
@@ -177,6 +177,9 @@ body.sobre{
 body.transparencia{
   background-color: #899787;
 }
+body.jogos{
+  background-color: #574D4B;
+}
 /* cor da letra do menu separador */
 body.contatos header nav ul li a,
 body.jogos header nav ul li a{
@@ -204,7 +207,8 @@ body.transparencia header nav ul li{
 
 body.home #background,
 body.contatos #background,
-body.sobre #background{
+body.sobre #background,
+body.jogos #background {
   background-repeat: repeat-x;
   position: absolute;
   width: 100%;
@@ -225,14 +229,19 @@ body.sobre #background{
   background-image: url(img/sobre_fundo.png);
   height:100%;
 }
-body.transparencia #background{
+body.jogos #background{
+  background-image: url(img/jogos_fundo.png);
+  background-position: center bottom;
+  height:100%;
 }
+
 
 body.home #temporary-background,
 body.contatos #temporary-background,
 body.contatos #temporary-background-2,
 body.sobre #temporary-background,
-body.transparencia #temporary-background{
+body.transparencia #temporary-background,
+body.jogos #temporary-background{
   position: absolute;
   width: 100%;
   height: 80%;
@@ -251,19 +260,24 @@ body.contatos #temporary-background-2{
   /*opacity:0.5;*/
   top: 671px;
 }
-body.sobre #temporary-background{
-  background-image: url(img/sobre_personagens.png);
-  background-position: 77% bottom;
+body.sobre #temporary-background,
+body.transparencia #temporary-background,
+body.jogos #temporary-background{
   background-repeat: no-repeat;
   height:100%;
   z-index: 1;
 }
+body.sobre #temporary-background{
+  background-image: url(img/sobre_personagens.png);
+  background-position: 77% bottom;
+}
 body.transparencia #temporary-background{
   background-image: url(img/transparencia_fundo.png);
-  height:100%;
-  z-index: 1;
-  background-repeat: no-repeat;
   background-position: right bottom;
+}
+body.jogos #temporary-background{
+  background-image: url(img/jogos_personagens.png);
+  background-position: 80% bottom;
 }
 body.home #mascote{
   position: relative;
