@@ -247,7 +247,7 @@ body.contatos #temporary-background-2{
 }
 body.sobre #temporary-background{
   background-image: url(img/sobre_personagens.png);
-  background-position: right bottom;
+  background-position: 77% bottom;
   background-repeat: no-repeat;
   height:100%;
   z-index: 1;
