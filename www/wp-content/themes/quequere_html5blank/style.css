@@ -271,15 +271,19 @@ body.noticias #temporary-background,
 body.transparencia #temporary-background{
   background-size: 100% auto;
 }
+body.sobre #temporary-background,
+body.transparencia #temporary-background,
+body.servicos #temporary-background,
+body.jogos #temporary-background{
+  position:fixed;
+}
 body.sobre #temporary-background{
   background-image: url(img/sobre_personagens.png);
   background-position: 77% bottom;
-  position:fixed;
 }
 body.transparencia #temporary-background{
   background-image: url(img/transparencia_fundo.png);
   background-position: right bottom;
-  position:fixed;
 }
 body.servicos #temporary-background{
   background-image: url(img/servicos_fundo.png);
@@ -292,7 +296,6 @@ body.noticias #temporary-background{
 body.jogos #temporary-background{
   background-image: url(img/jogos_personagens.png);
   background-position: 80% bottom;
-  position: fixed;
 }
 body.home #mascote{
   position: relative;
