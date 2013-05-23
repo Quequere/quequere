@@ -326,9 +326,12 @@ body.sobre #balao h1{
   background-color: #fff;
   background-color: rgba(255,255,255,0.85);
   border-radius: 40px;
-  position: relative;
+  position: absolute;
   padding: 1% 2%;
   margin-bottom: 100px;
+}
+body.sobre #balao{
+  position: relative;
 }
 body.contatos #balao{
   top:42px;
