@@ -1,17 +1,15 @@
 #Quinta 23 de maio
 
-- [Geral][Bug] Fonte do menu não está sendo carregada
-
-
 - [Sobre] template com balão
 - [Noticias] montar o balao no mesmo esquema de jogos e servicos
 - [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
 - [Transparência] personagem com placa
+- [Home RFE] Quando o balao for muito comprido, subir ele um pouco
 
 
 
 
-
++ [Geral][Bug] Fonte do menu não está sendo carregada @done (2013-05-23 17:46)
 + [Jogos, Servicos] Arranjar um jeito de mexer na ordem ('page-attributes'?) dos itens ou definir a ordem @done (2013-05-23 13:20)
 + [Serviços] Criar custom type (igual jogos) @done (2013-05-23 13:01)
 + [Servicos, Transparencia, Noticias] - colocar o background em porcxentagem @done (2013-05-23 12:43)
