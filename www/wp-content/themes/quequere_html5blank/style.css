@@ -59,7 +59,19 @@ body.noticias{
    ========================================================================== */
 
 /* Ubuntu Condensed */
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+/* @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed); */
+@font-face {
+    font-family: 'UbuntuCondensedRegular';
+    src: url('fonts/ubuntu-fontfacekit/Ubuntu-C-webfont.eot');
+    src: url('fonts/ubuntu-fontfacekit/Ubuntu-C-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-fontfacekit/Ubuntu-C-webfont.woff') format('woff'),
+         url('fonts/ubuntu-fontfacekit/Ubuntu-C-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-fontfacekit/Ubuntu-C-webfont.svg#UbuntuCondensedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /* =============================================================================
    General Styles
@@ -74,29 +86,6 @@ body.noticias{
     url('fonts/font-name.svg#font-name') format('svg');
     font-weight:normal;
     font-style:normal;
-}
-@font-face {
-    font-family: 'OxygenRegular';
-    src: url('fonts/oxygen-fontfacekit/Oxygen-webfont.eot');
-    src: url('fonts/oxygen-fontfacekit/Oxygen-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/oxygen-fontfacekit/Oxygen-webfont.woff') format('woff'),
-         url('fonts/oxygen-fontfacekit/Oxygen-webfont.ttf') format('truetype'),
-         url('fonts/oxygen-fontfacekit/Oxygen-webfont.svg#OxygenRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'OxygenBold';
-    src: url('fonts/oxygen-fontfacekit/Oxygen-Bold-webfont.eot');
-    src: url('fonts/oxygen-fontfacekit/Oxygen-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/oxygen-fontfacekit/Oxygen-Bold-webfont.woff') format('woff'),
-         url('fonts/oxygen-fontfacekit/Oxygen-Bold-webfont.ttf') format('truetype'),
-         url('fonts/oxygen-fontfacekit/Oxygen-Bold-webfont.svg#OxygenBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /* Global Box Sizing and Font-Smoothing */
@@ -144,7 +133,7 @@ header nav ul{
 }
 header nav ul li{
   display: inline;
-  font-family: 'Ubuntu Condensed', "Futura", sans-serif;
+  font-family: 'UbuntuCondensedRegular', "Futura", sans-serif;
   font-size: 1.9rem;
   line-height: 1.9rem;
   color: #7287c3;
