@@ -366,11 +366,18 @@ body.servicos #navlist{
   z-index: 2;
   font-size: 2em;
   line-height: 1.5em;
-  color: #fff;
 }
+body.jogos #navlist a,
+body.servicos #navlist a{
+  text-decoration: none;
+}
+body.jogos #navlist,
 body.jogos #navlist a{
   color: #fff;
-  text-decoration: none;
+}
+body.servicos #navlist,
+body.servicos #navlist a{
+  color: #000;
 }
 
 body.jogos #balao,
