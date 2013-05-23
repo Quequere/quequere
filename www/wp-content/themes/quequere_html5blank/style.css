@@ -39,7 +39,7 @@ body.sobre{
   /*background-image: url(img/sobre_final.jpg);*/
 }
 body.servicos{
-  background-image: url(img/servicos_RESIZE.png);
+  /*background-image: url(img/servicos_RESIZE.png);*/
 }
 body.jogos{
   /*background-image: url(img/jogos_final.jpg);*/
@@ -180,6 +180,9 @@ body.transparencia{
 body.jogos{
   background-color: #574D4B;
 }
+body.servicos{
+  background-color: #FAF29D;
+}
 /* cor da letra do menu separador */
 body.contatos header nav ul li a,
 body.jogos header nav ul li a{
@@ -235,11 +238,11 @@ body.jogos #background{
   height:100%;
 }
 
-
 body.home #temporary-background,
 body.contatos #temporary-background,
 body.contatos #temporary-background-2,
 body.sobre #temporary-background,
+body.servicos #temporary-background,
 body.transparencia #temporary-background,
 body.jogos #temporary-background{
   position: absolute;
@@ -261,6 +264,7 @@ body.contatos #temporary-background-2{
   top: 671px;
 }
 body.sobre #temporary-background,
+body.servicos #temporary-background,
 body.transparencia #temporary-background,
 body.jogos #temporary-background{
   background-repeat: no-repeat;
@@ -273,6 +277,10 @@ body.sobre #temporary-background{
 }
 body.transparencia #temporary-background{
   background-image: url(img/transparencia_fundo.png);
+  background-position: right bottom;
+}
+body.servicos #temporary-background{
+  background-image: url(img/servicos_fundo.png);
   background-position: right bottom;
 }
 body.jogos #temporary-background{
