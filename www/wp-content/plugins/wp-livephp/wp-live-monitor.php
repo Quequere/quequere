@@ -4,7 +4,7 @@
  * @author Bence Meszaros
  * @link http://bencemeszaros.com
  * @link http://wordpress.org/extend/plugins/wp-livephp/
- * @version 1.5
+ * @version 1.6.1
  */
 
 if (!class_exists('LiveMonitor'))
@@ -19,10 +19,13 @@ if (!class_exists('LiveMonitor'))
         );
         /** ignore these files or directories */
         protected $ignore = array();
-        
+
         /** default time limit in seconds */
         protected $timeLimit = 125;
-        
+
+        /** Refresh css files without reloading the page */
+        protected $cssOnTheFly = true;
+
         /** the time to die */
         protected $deadLine;
 
@@ -38,7 +41,7 @@ if (!class_exists('LiveMonitor'))
                 $start = (int) ($_GET['s'] / 1000);
 
                 $this->headers();
-                $this->setDeadLine();                
+                $this->setDeadLine();
                 $this->main($start);
             }
             else
@@ -47,7 +50,7 @@ if (!class_exists('LiveMonitor'))
                 die;
             }
         }
-        
+
         /**
          * Output the no-cache headers
          */
@@ -64,12 +67,12 @@ if (!class_exists('LiveMonitor'))
         {
             // in safe mode there is no way to set the time limit
             if (!ini_get('safe_mode'))
-            { 
-                set_time_limit($this->timeLimit); 
-            }        
+            {
+                set_time_limit($this->timeLimit);
+            }
             // lets check what the actual limit is
             $limit = ini_get('max_execution_time');
-            
+
             if (empty($limit) || $limit < 1)
             {
                 // in case of unsuccesful ini_get, (or unlimited execution), we fall back to the default 30 sec
@@ -85,23 +88,24 @@ if (!class_exists('LiveMonitor'))
          */
         protected function main($start)
         {
-			// clear file state cache
-			clearstatcache();
+            // clear file state cache
+            clearstatcache();
             // long polling loop
             do
             {
                 // look for the changes every second until the execution time allows it.
                 foreach ($this->dirs as $root)
                 {
-                    if ($this->checkDir(realpath($root), $start))
+                    $result = $this->checkDir(realpath($root), $start);
+                    if ($result)
                     {
                         // if we find modified files in any of the directories, we can skip the rest
-                        echo '1';
+                        echo json_encode($result);
 
                         die;
                     }
                 }
-                
+
                 sleep(1);
             }
             while (time() < $this->deadLine);
@@ -140,8 +144,16 @@ if (!class_exists('LiveMonitor'))
                                 $mtime = filemtime($file);
                                 if ($mtime && $start < $mtime)
                                 {
+                                    $pinfo = pathinfo($file);
                                     // return true at the first positive match
-                                    return true;
+                                    if ($this->cssOnTheFly && $pinfo['extension'] == 'css') {
+                                        // if the file is a css then then we send the whole path back
+                                        return $mtime * 1000;
+                                    }
+                                    else {
+                                        // otherwise return true
+                                        return true;
+                                    }
                                 }
                             }
                         }
@@ -155,6 +167,6 @@ if (!class_exists('LiveMonitor'))
     } // end LiveMonitor
 
     new LiveMonitor();
-    
+
 
 } // end class check if

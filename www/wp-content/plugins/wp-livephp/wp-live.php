@@ -6,7 +6,7 @@
   Author: Bence Meszaros
   Author URI: http://bencemeszaros.com
   Plugin URI: http://wordpress.org/extend/plugins/wp-livephp/
-  Version: 1.5
+  Version: 1.6.1
   License: GPL2
  */
 /*  Copyright 2011  Bence Meszaros  (email : bence@bencemeszaros.com)
@@ -30,7 +30,7 @@ if (!class_exists('LivePhp'))
     class LivePhp
     {
         protected $contentCheckFile = 'wp-live-contentcheck.txt';
-        
+
         /** options array */
         protected $options = array();
 
@@ -219,14 +219,14 @@ if (!class_exists('LivePhp'))
         }
 
         /**
-         * Content check file updater 
+         * Content check file updater
          * This is called at the save_post hook, to trigger a refresh at every post/page save
          */
-        public function touchContentCheckFile() 
+        public function touchContentCheckFile()
         {
             touch($this->contentCheckFile);
         }
-        
+
         /**
          * Ajax handler
          */
@@ -251,7 +251,7 @@ if (!class_exists('LivePhp'))
                                 // file touch failed
                                 echo 'Error: Unable to create content check file at<br>' . $this->contentCheckFile;
                             }
-                        }    
+                        }
                         else {
                             // remove the file
                             unlink($this->contentCheckFile);
@@ -313,7 +313,7 @@ if (!class_exists('LivePhp'))
             };
             if(options) {
                 jQuery.extend(settings, options);
-            }      
+            }
             // create the switch
             return this.each(function() {
                 var container;
