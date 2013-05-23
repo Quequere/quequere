@@ -1,7 +1,10 @@
 #Quinta 23 de maio
 
-
 - [Geral][Bug] Fonte do menu não está sendo carregada
+
+
+- [Sobre] template com balão
+- [Noticias] montar o balao no mesmo esquema de jogos e servicos
 - [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
 - [Transparência] personagem com placa
 
