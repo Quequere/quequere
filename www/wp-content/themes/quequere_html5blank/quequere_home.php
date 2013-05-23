@@ -8,8 +8,8 @@ get_header();
   <div id="balao">
     <div id="balao_rabo"></div>
     <blockquote>
-      <p>Às vezes o tigre em mim se demonstra cruel como é próprio da espécie.</p>
-      <p>Outras, cochila ou se enrosca em afago emoliente, mas sempre tigre, disfarçado.</p>
+      <p>“Às vezes o tigre em mim se demonstra cruel como é próprio da espécie.</p>
+      <p>Outras, cochila ou se enrosca em afago emoliente, mas sempre tigre, disfarçado.”</p>
     </blockquote>
   </div>
 </div>

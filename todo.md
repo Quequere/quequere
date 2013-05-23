@@ -2,9 +2,13 @@
 
 #Quarta 22 de maio
 
+- [Home] layout do balão (texto maior)
+- [Home] sorteio de quotes
+- [Transparência] personagem com placa
+
+
 + Serviços (background) @done (2013-05-23 01:58)
 + Notícias (background) @done (2013-05-23 01:58)
-- [Transparência] personagem com placa
 
 
 
