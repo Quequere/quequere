@@ -1,6 +1,6 @@
 #Quinta 23 de maio
 
-- [Servicos, Transparencia, Noticias] - colocar o background em porcxentagem
+- [Serviços] Criar custom type (igual jogos)
 - [Geral][Bug] Fonte do menu não está sendo carregada
 
 - [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
@@ -10,6 +10,7 @@
 
 
 
++ [Servicos, Transparencia, Noticias] - colocar o background em porcxentagem @done (2013-05-23 12:43)
 
 
 
@@ -17,6 +18,7 @@
 
 - [Jogos][Future] fazer este carregamento ser Ajax
 - [Geral][Future] instalar Google Analytics
+- [Geral][Future] cache
 
 
 

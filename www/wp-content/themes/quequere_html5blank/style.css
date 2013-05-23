@@ -360,19 +360,21 @@ body.home #balao_rabo{
   background-repeat: no-repeat;
 }
 
-body.jogos #gamelist{
+body.jogos #navlist,
+body.servicos #navlist{
   position: fixed;
   z-index: 2;
   font-size: 2em;
   line-height: 1.5em;
   color: #fff;
 }
-body.jogos #gamelist a{
+body.jogos #navlist a{
   color: #fff;
   text-decoration: none;
 }
 
-body.jogos #balao{
+body.jogos #balao,
+body.servicos #balao{
   padding: 2em;
   position: relative;
   left: 340px;

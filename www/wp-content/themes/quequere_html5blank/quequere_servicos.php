@@ -1,7 +1,7 @@
 <?php
-/* Template Name: Quequeré Jogos */
+/* Template Name: Quequeré Serviços */
 
-$args = array( 'post_type' => 'quequere-jogo', 'posts_per_page' => 100);
+$args = array( 'post_type' => 'quequere-servico', 'posts_per_page' => 100);
 $loop = new WP_Query( $args );
 $titles = array();
 $contents = array();
