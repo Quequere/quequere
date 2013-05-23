@@ -27,6 +27,12 @@ body{
   background-repeat: no-repeat;
   background-position: center top;
 }
+body a{
+  color: #676767;
+}
+body a:visited{
+  color: #999;
+}
 body.contatos{
 /*  background-image: url(img/contato_aspecto_final.jpg);
   background-position: center -130px;
@@ -131,11 +137,13 @@ header nav ul li{
 header nav ul li:last-child{
   color:transparent;
 }
-header nav ul li a{
+header nav ul li a,
+header nav ul li a:visited{
   text-decoration: none;
   color: #1e1e1c;
   margin-right: 0.8rem;
 }
+
 #logo{
   position: absolute;
   top:19px;
@@ -314,12 +322,15 @@ body.home #balao{
 
 body.home #balao blockquote,
 body.jogos #balao,
+body.contatos #balao,
 body.sobre #balao{
   font-size: 2em;
   line-height: 1.3em;
 }
 body.home #balao blockquote h1,
 body.jogos #balao h1,
+body.contatos #balao h1,
+body.contatos #balao h2,
 body.sobre #balao h1{
   font-size: 1em;
 }

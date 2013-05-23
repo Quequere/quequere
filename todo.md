@@ -1,6 +1,5 @@
 #Quinta 23 de maio
 
-- [Sobre] template com balão
 - [Noticias] montar o balao no mesmo esquema de jogos e servicos
 - [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
 - [Transparência] personagem com placa
@@ -9,17 +8,18 @@
 
 
 
++ [Sobre] template com balão @done (2013-05-23 18:06)
 + [Geral][Bug] Fonte do menu não está sendo carregada @done (2013-05-23 17:46)
 + [Jogos, Servicos] Arranjar um jeito de mexer na ordem ('page-attributes'?) dos itens ou definir a ordem @done (2013-05-23 13:20)
 + [Serviços] Criar custom type (igual jogos) @done (2013-05-23 13:01)
 + [Servicos, Transparencia, Noticias] - colocar o background em porcxentagem @done (2013-05-23 12:43)
++ [Geral][Future] instalar Google Analytics @done (2013-05-23 18:06)
 
 
 
 
 
 - [Jogos][Future] fazer este carregamento ser Ajax
-- [Geral][Future] instalar Google Analytics
 - [Geral][Future] cache
 
 
