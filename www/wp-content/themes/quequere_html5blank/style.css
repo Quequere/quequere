@@ -279,6 +279,11 @@ body.jogos #temporary-background{
   height:100%;
   z-index: 1;
 }
+body.servicos #temporary-background,
+body.noticias #temporary-background,
+body.transparencia #temporary-background{
+  background-size: 100% auto;
+}
 body.sobre #temporary-background{
   background-image: url(img/sobre_personagens.png);
   background-position: 77% bottom;

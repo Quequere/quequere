@@ -1,9 +1,53 @@
+#Quinta 23 de maio
+
+- [Servicos, Transparencia, Noticias] - colocar o background em porcxentagem
+- [Geral][Bug] Fonte do menu não está sendo carregada
+
+- [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
+- [Transparência] personagem com placa
+
+
+
+
+
+
+
+
+
+
+- [Jogos][Future] fazer este carregamento ser Ajax
+- [Geral][Future] instalar Google Analytics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #Quarta 22 de maio
 
-- [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
-- [Transparência] personagem com placa
 
 
 
@@ -15,13 +59,6 @@
 + [Home] sorteio de quotes @done (2013-05-23 03:03)
 + Serviços (background) @done (2013-05-23 01:58)
 + Notícias (background) @done (2013-05-23 01:58)
-
-
-
-
-
-- [Jogos][Future] fazer este carregamento ser Ajax
-- [Geral][Future] instalar Google Analytics
 
 
 
