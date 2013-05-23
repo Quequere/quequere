@@ -1,7 +1,8 @@
 <?php
 /* Template Name: Quequeré Serviços */
 
-$args = array( 'post_type' => 'quequere-servico', 'posts_per_page' => 100);
+$args = array( 'post_type' => 'quequere-servico', 'posts_per_page' => 100,
+               'orderby' => 'menu_order', 'order' => 'DESC');
 $loop = new WP_Query( $args );
 $titles = array();
 $contents = array();

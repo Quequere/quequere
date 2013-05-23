@@ -1,8 +1,7 @@
 #Quinta 23 de maio
 
-- [Serviços] Criar custom type (igual jogos)
-- [Geral][Bug] Fonte do menu não está sendo carregada
 
+- [Geral][Bug] Fonte do menu não está sendo carregada
 - [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
 - [Transparência] personagem com placa
 
@@ -10,6 +9,8 @@
 
 
 
++ [Jogos, Servicos] Arranjar um jeito de mexer na ordem ('page-attributes'?) dos itens ou definir a ordem @done (2013-05-23 13:20)
++ [Serviços] Criar custom type (igual jogos) @done (2013-05-23 13:01)
 + [Servicos, Transparencia, Noticias] - colocar o background em porcxentagem @done (2013-05-23 12:43)
 
 

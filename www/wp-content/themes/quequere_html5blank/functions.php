@@ -498,7 +498,8 @@ function create_post_type_quequere_jogo()
         'has_archive' => true,
         'supports' => array(
             'title',
-            'editor'
+            'editor',
+            'page-attributes'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
@@ -534,7 +535,8 @@ function create_post_type_quequere_servico()
         'has_archive' => true,
         'supports' => array(
             'title',
-            'editor'
+            'editor',
+            'page-attributes'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
