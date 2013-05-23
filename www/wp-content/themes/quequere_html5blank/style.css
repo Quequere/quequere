@@ -382,28 +382,27 @@ body.home #balao_rabo{
   background-repeat: no-repeat;
 }
 
-body.jogos #navlist,
-body.servicos #navlist{
+#navlist{
   position: fixed;
   z-index: 2;
   font-size: 2em;
   line-height: 1.5em;
 }
-body.jogos #navlist a,
-body.servicos #navlist a{
+#navlist a{
   text-decoration: none;
+}
+#navlist,
+#navlist a{
+  color: #000;
 }
 body.jogos #navlist,
 body.jogos #navlist a{
   color: #fff;
 }
-body.servicos #navlist,
-body.servicos #navlist a{
-  color: #000;
-}
 
 body.jogos #balao,
 body.servicos #balao,
+body.noticias #balao,
 body.transparencia #balao{
   padding: 2em;
   position: relative;

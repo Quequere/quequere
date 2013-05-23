@@ -1,8 +1,9 @@
 #Quinta 23 de maio
 
-- [Noticias] montar o balao no mesmo esquema de jogos e servicos
-- [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
-- [Transparência] personagem com placa
+- [Noticias] O balão foge um pouco do padrão e mostra todas
+- [Servicos, Jogos e Noticias] mexer na fonte da sidebar
+- [Servicos, Jogos e Noticias] mouseover mostra o balao
+- [Servicos, Jogos e Noticias] clique mostra o balao e mantem aberto
 - [Home RFE] Quando o balao for muito comprido, subir ele um pouco
 
 
@@ -19,6 +20,8 @@
 
 
 
+- [Noticias][Future] O balão mostra as ultimas 10 e tem um link de carregar as 10 anteriores
+- [Transparência][Future] personagem com placa
 - [Jogos][Future] fazer este carregamento ser Ajax
 - [Geral][Future] cache
 
