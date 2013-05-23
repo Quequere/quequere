@@ -379,7 +379,7 @@ add_action('wp_footer', 'add_jquery_fallback'); // jQuery fallbacks loaded throu
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_quequere_fala'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -433,34 +433,33 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
  */
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+function create_post_type_quequere_fala()
 {
     register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
+    register_post_type('quequere-fala', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('Falas do Quequeré', 'html5blank'), // Rename these to suit
+            'singular_name' => __('Fala do Quequeré', 'html5blank'),
+            'add_new' => __('Adicionar Nova', 'html5blank'),
+            'add_new_item' => __('Adicionar Nova Fala do Quequeré', 'html5blank'),
+            'edit' => __('Editar', 'html5blank'),
+            'edit_item' => __('Editar Fala do Quequeré', 'html5blank'),
+            'new_item' => __('Nova Fala do Quequeré', 'html5blank'),
+            'view' => __('Visualizar Fala do Quequeré', 'html5blank'),
+            'view_item' => __('Visualizar Fala do Quequeré', 'html5blank'),
+            'search_items' => __('Buscar Fala do Quequeré', 'html5blank'),
+            'not_found' => __('Nenhuma Fala do Quequeré encontrada', 'html5blank'),
+            'not_found_in_trash' => __('Nenhuma Fala do Quequeré encontrada na lixeira', 'html5blank')
         ),
+        'menu_position' => 5,
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
         'supports' => array(
             'title',
-            'editor',
-            'excerpt',
-            'thumbnail'
+            'editor'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(

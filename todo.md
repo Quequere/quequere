@@ -2,11 +2,13 @@
 
 #Quarta 22 de maio
 
-- [Home] layout do balão (texto maior)
-- [Home] sorteio de quotes
 - [Transparência] personagem com placa
 
+- [Geral] instalar Google Analytics
 
+
++ [Home] layout do balão (texto maior) @done (2013-05-23 03:03)
++ [Home] sorteio de quotes @done (2013-05-23 03:03)
 + Serviços (background) @done (2013-05-23 01:58)
 + Notícias (background) @done (2013-05-23 01:58)
 
