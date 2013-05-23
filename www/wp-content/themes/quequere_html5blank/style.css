@@ -330,6 +330,9 @@ body.sobre #balao h1{
   padding: 1% 2%;
   margin-bottom: 100px;
 }
+body.home #balao blockquote{
+  font-style: italic;
+}
 body.sobre #balao{
   position: relative;
 }
