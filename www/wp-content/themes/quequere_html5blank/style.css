@@ -310,18 +310,25 @@ body.home #balao{
   min-height:45.3%;
   width: 57%;
 }
+
 body.home #balao blockquote,
 body.jogos #balao,
 body.sobre #balao{
   font-size: 2em;
   line-height: 1.3em;
 }
+body.home #balao blockquote h1,
+body.jogos #balao h1,
+body.sobre #balao h1{
+  font-size: 1em;
+}
 #balao{
   background-color: #fff;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.85);
   border-radius: 40px;
-  position: absolute;
+  position: relative;
   padding: 1% 2%;
+  margin-bottom: 100px;
 }
 body.contatos #balao{
   top:42px;
