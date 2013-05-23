@@ -1,3 +1,55 @@
+
+
+#Quarta 22 de maio
+
++ Serviços (background) @done (2013-05-23 01:58)
++ Notícias (background) @done (2013-05-23 01:58)
+- [Transparência] personagem com placa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+
 #Quarta 13 de Março
 
 - remover footer

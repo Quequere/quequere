@@ -26,14 +26,10 @@
 if (in_array($post->post_name, array('contatos', 'jogos'))){
 	$logo_branco = "_branco";
 }
-if (in_array($post->post_name, array('home', 'contatos', 'sobre', 'servicos', 'transparencia','jogos'))):
 ?>
 <div id="temporary-background"></div>
 <div id="temporary-background-2"></div>
 <div id="background"></div>
-<?php
-endif;
-?>
 	<!-- Header -->
 	<header>
 

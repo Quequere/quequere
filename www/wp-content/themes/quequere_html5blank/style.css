@@ -45,8 +45,9 @@ body.jogos{
   /*background-image: url(img/jogos_final.jpg);*/
 }
 body.noticias{
-  background-image: url(img/noticias.png);
+/*  background-image: url(img/noticias.png);
   background-position: right -130px;
+*/
 }
 
 
@@ -183,6 +184,10 @@ body.jogos{
 body.servicos{
   background-color: #FAF29D;
 }
+body.noticias{
+  background-color: #F47C20;
+}
+
 /* cor da letra do menu separador */
 body.contatos header nav ul li a,
 body.jogos header nav ul li a{
@@ -243,6 +248,7 @@ body.contatos #temporary-background,
 body.contatos #temporary-background-2,
 body.sobre #temporary-background,
 body.servicos #temporary-background,
+body.noticias #temporary-background,
 body.transparencia #temporary-background,
 body.jogos #temporary-background{
   position: absolute;
@@ -265,6 +271,7 @@ body.contatos #temporary-background-2{
 }
 body.sobre #temporary-background,
 body.servicos #temporary-background,
+body.noticias #temporary-background,
 body.transparencia #temporary-background,
 body.jogos #temporary-background{
   background-repeat: no-repeat;
@@ -281,6 +288,10 @@ body.transparencia #temporary-background{
 }
 body.servicos #temporary-background{
   background-image: url(img/servicos_fundo.png);
+  background-position: right bottom;
+}
+body.noticias #temporary-background{
+  background-image: url(img/noticias_fundo.png);
   background-position: right bottom;
 }
 body.jogos #temporary-background{
