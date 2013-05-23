@@ -241,6 +241,7 @@ body.jogos #background{
   background-image: url(img/jogos_fundo.png);
   background-position: center bottom;
   height:100%;
+  position: fixed;
 }
 
 body.home #temporary-background,
@@ -297,6 +298,7 @@ body.noticias #temporary-background{
 body.jogos #temporary-background{
   background-image: url(img/jogos_personagens.png);
   background-position: 80% bottom;
+  position: fixed;
 }
 body.home #mascote{
   position: relative;
@@ -317,24 +319,26 @@ body.contatos #mascote{
 }
 body.home #balao,
 body.contatos #balao{
-  position: absolute;
-  background-color: #fff;
-  border-radius: 40px;
-  padding: 1% 2%;
 }
 body.home #balao{
-  background-color: rgba(255,255,255,0.7);
   left: 231px;
   top:-56px;
   min-height:45.3%;
   width: 57%;
 }
-body.home #balao blockquote{
+body.home #balao blockquote,
+body.jogos #balao{
   font-size: 2em;
   line-height: 1.3em;
 }
-body.contatos #balao{
+#balao{
+  background-color: #fff;
   background-color: rgba(255,255,255,0.7);
+  border-radius: 40px;
+  position: absolute;
+  padding: 1% 2%;
+}
+body.contatos #balao{
   top:42px;
   min-height:45%;
   left: 23px;
@@ -351,6 +355,26 @@ body.home #balao_rabo{
   background-repeat: no-repeat;
 }
 
+body.jogos #gamelist{
+  position: fixed;
+  z-index: 2;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #fff;
+}
+body.jogos #gamelist a{
+  color: #fff;
+  text-decoration: none;
+}
+
+body.jogos #balao{
+  padding: 2em;
+  position: relative;
+  left: 340px;
+  width: 50%;
+  top: 30px;
+  z-index:3;
+}
 /* =============================================================================
    Structure
    ========================================================================== */

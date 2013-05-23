@@ -2,15 +2,13 @@
 
 #Quarta 22 de maio
 
-- [Jogos] no layout listar os jogos na esquerda
-- [Jogos] no layout criar balão para conteúdo
 - [Jogos] fazer o clique no menu abrir o conteúdo do jogo no balão
-- [Jogos][Future] fazer este carregamento ser Ajax
 - [Transparência] personagem com placa
 
-- [Geral] instalar Google Analytics
 
 
++ [Jogos] no layout listar os jogos na esquerda @done (2013-05-23 04:35)
++ [Jogos] no layout criar balão para conteúdo @done (2013-05-23 04:35)
 + [Jogos] criar o tipo Jogo @done (2013-05-23 03:44)
 + [Contatos] conteúdo do balão é editável @done (2013-05-23 03:32)
 + [Home] layout do balão (texto maior) @done (2013-05-23 03:03)
@@ -22,6 +20,8 @@
 
 
 
+- [Jogos][Future] fazer este carregamento ser Ajax
+- [Geral][Future] instalar Google Analytics
 
 
 

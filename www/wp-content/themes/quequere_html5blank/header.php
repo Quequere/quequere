@@ -23,7 +23,8 @@
 <body <?php body_class(); ?>>
 
 <?php
-if (in_array($post->post_name, array('contatos', 'jogos'))){
+$slug = (is_page()) ? get_query_var('name') : $post->post_name;
+if (in_array($slug, array('contatos', 'jogos'))){
 	$logo_branco = "_branco";
 }
 ?>
