@@ -59,7 +59,6 @@ body.noticias{
    ========================================================================== */
 
 /* Ubuntu Condensed */
-/* @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed); */
 @font-face {
     font-family: 'UbuntuCondensedRegular';
     src: url('fonts/ubuntu-fontfacekit/Ubuntu-C-webfont.eot');
@@ -76,17 +75,6 @@ body.noticias{
 /* =============================================================================
    General Styles
    ========================================================================== */
-
-@font-face {
-  font-family:'Font-Name';
-  src:url('fonts/font-name.eot');
-  src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
-    url('fonts/font-name.woff') format('woff'),
-    url('fonts/font-name.ttf') format('truetype'),
-    url('fonts/font-name.svg#font-name') format('svg');
-    font-weight:normal;
-    font-style:normal;
-}
 
 /* Global Box Sizing and Font-Smoothing */
 *, *:after, *:before {
@@ -225,6 +213,7 @@ body.sobre #background{
   background-repeat: repeat;
   background-image: url(img/sobre_fundo.png);
   height:100%;
+  position: fixed;
 }
 body.jogos #background{
   background-image: url(img/jogos_fundo.png);
@@ -276,6 +265,7 @@ body.transparencia #temporary-background{
 body.sobre #temporary-background{
   background-image: url(img/sobre_personagens.png);
   background-position: 77% bottom;
+  position:fixed;
 }
 body.transparencia #temporary-background{
   background-image: url(img/transparencia_fundo.png);
@@ -321,13 +311,14 @@ body.home #balao{
   width: 57%;
 }
 body.home #balao blockquote,
-body.jogos #balao{
+body.jogos #balao,
+body.sobre #balao{
   font-size: 2em;
   line-height: 1.3em;
 }
 #balao{
   background-color: #fff;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.8);
   border-radius: 40px;
   position: absolute;
   padding: 1% 2%;
