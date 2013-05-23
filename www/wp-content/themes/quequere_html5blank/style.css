@@ -279,6 +279,7 @@ body.sobre #temporary-background{
 body.transparencia #temporary-background{
   background-image: url(img/transparencia_fundo.png);
   background-position: right bottom;
+  position:fixed;
 }
 body.servicos #temporary-background{
   background-image: url(img/servicos_fundo.png);
@@ -323,6 +324,8 @@ body.home #balao{
 body.home #balao blockquote,
 body.jogos #balao,
 body.contatos #balao,
+body.transparencia #balao,
+body.servicos #balao,
 body.sobre #balao{
   font-size: 2em;
   line-height: 1.3em;
@@ -331,6 +334,9 @@ body.home #balao blockquote h1,
 body.jogos #balao h1,
 body.contatos #balao h1,
 body.contatos #balao h2,
+body.servicos #balao h1,
+body.servicos #balao h2,
+body.transparencia #balao h1,
 body.sobre #balao h1{
   font-size: 1em;
 }
@@ -394,7 +400,8 @@ body.servicos #navlist a{
 }
 
 body.jogos #balao,
-body.servicos #balao{
+body.servicos #balao,
+body.transparencia #balao{
   padding: 2em;
   position: relative;
   left: 340px;
