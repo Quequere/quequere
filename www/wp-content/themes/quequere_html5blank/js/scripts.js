@@ -1,10 +1,22 @@
 // DOM Ready
 $(function() {
-	
+
+	function sidebarLinkClicked(evt){
+		evt.preventDefault();
+		$('#balao').addClass('on');
+		$('#balao section').removeClass('selected');
+		$($(this).attr('href')).addClass('selected');
+	}
+	function setupSidebar(){
+		if ($('body').hasClass('jogos') || $('body').hasClass('servicos')){
+			$('#navlist a').click(sidebarLinkClicked);
+		}
+	}
+
 	// SVG custom feature detection and svg to png fallback
 	// toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script#update
 	function supportsSVG() {
-		return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;	
+		return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
 	}
 	if (supportsSVG()) {
 		document.documentElement.className += ' svg';
@@ -19,4 +31,5 @@ $(function() {
 		}
 	}
 
+	setupSidebar();
 });

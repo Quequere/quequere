@@ -382,6 +382,29 @@ body.home #balao_rabo{
   background-repeat: no-repeat;
 }
 
+
+body.servicos #balao,
+body.jogos #balao{
+  display:none;
+}
+
+body.servicos #balao section,
+body.jogos #balao section{
+  display: none;
+}
+
+body.servicos #balao section.selected,
+body.jogos #balao section.selected{
+  display: block;
+}
+
+
+body.servicos #balao.on,
+body.jogos #balao.on{
+  display: block;
+}
+
+
 #navlist{
   position: fixed;
   z-index: 2;
