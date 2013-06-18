@@ -1,14 +1,23 @@
-#Quinta 23 de maio
-
-- [Noticias] O balão foge um pouco do padrão e mostra todas
-- [Servicos, Jogos e Noticias] mexer na fonte da sidebar
+#Terça 18 de Junho
+- [Servicos, Jogos] Toggle de fechar o balão quando clicar numa noticia aberta
 - [Servicos, Jogos e Noticias] mouseover mostra o balao
-- [Servicos, Jogos e Noticias] clique mostra o balao e mantem aberto
+- [Serviços, Jogos e Notícias] Fonte
+- [Noticias] data e autor nos posts
+- [Usuario] guimba ou gumbao ser o nome do admin
+
+#Futuro
 - [Home RFE] Quando o balao for muito comprido, subir ele um pouco
 
 
+#Quinta 23 de maio
+
+- [Servicos, Jogos e Noticias] mexer na fonte da sidebar
 
 
+
+
++ [Noticias] O balão foge um pouco do padrão e mostra todas @done (2013-06-18 14:52)
++ [Servicos, Jogos e Noticias] clique mostra o balao e mantem aberto @done (2013-06-18 14:50)
 + [Sobre] template com balão @done (2013-05-23 18:06)
 + [Geral][Bug] Fonte do menu não está sendo carregada @done (2013-05-23 17:46)
 + [Jogos, Servicos] Arranjar um jeito de mexer na ordem ('page-attributes'?) dos itens ou definir a ordem @done (2013-05-23 13:20)
